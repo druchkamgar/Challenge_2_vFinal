@@ -109,7 +109,11 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    # If there are no qualifying loans inform the user and exit the app
+    # If there are qualifying loans, prompt user and ask if they would like to save the results as a CSV file
+    # If the user decides to save the file, prompt the user for a file path
+    # Save the results as a .csv file by importing and using save_csv() from fileio
+    # If the user decides not to save the file, exit the app
 
 
 def run():

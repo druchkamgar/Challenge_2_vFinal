@@ -28,3 +28,9 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+
+
+# Create a save_csv() funtion
+# The function should write data to a .csv so users can save their qualifying loans
+# It should be importable to the save_qualifying_loans function
