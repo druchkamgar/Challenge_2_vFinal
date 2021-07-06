@@ -31,6 +31,19 @@ def load_csv(csvpath):
 
 
 
-# Create a save_csv() funtion
-# The function should write data to a .csv so users can save their qualifying loans
-# It should be importable to the save_qualifying_loans function
+
+def save_csv(csvpath):
+    """Writes to a CSV file 
+
+    Args:
+        csvpath (Path): the file path name is provided in save_qualifying_loans
+
+    Returns:
+        A csv file with rows of data from save_qualifying_loans
+
+    """
+    with open(csvpath, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        header = []
+        csvwriter.writerow(header)
+        csvwriter.writerow(qualifying_loans)
