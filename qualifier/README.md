@@ -52,29 +52,23 @@ Followed by the following questions:
 After accurately answering the prompts, the user will have a .csv containing information regarding bank loans they qualify for. They may not qualify for any, in which case the app will exit with the prompt: "You have no qualifying loans". The logic looks as follows:
 
 
-'''
-
-    def save_qualifying_loans(qualifying_loans):
+'''python
+ def save_qualifying_loans(qualifying_loans):
     
-    """Saves the qualifying loans to a CSV file.
+"""Saves the qualifying loans to a CSV file.
 
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # If there are no qualifying loans inform the user and exit the app
-    if len(qualifying_loans) == 0:
-        sys.exit("You have no qualifying loans")
-    # If there are qualifying loans, prompt user and ask if they would like to save the results as a CSV file
+Args:
+    qualifying_loans (list of lists): The qualifying bank loans.
+"""
+if len(qualifying_loans) == 0:
+    sys.exit("You have no qualifying loans")
+else:
+    save_file = questionary.confirm("Would you like to save your qualifying loans in a .csv?").ask()
+    if save_file == True:
+        csvpath = Path(questionary.text('Please enter a file path name to save your file').ask())
+        save_csv(csvpath, qualifying_loans)
     else:
-        save_file = questionary.confirm("Would you like to save your qualifying loans in a .csv?").ask()
-    # If the user decides to save the file, prompt the user for a file path
-        if save_file == True:
-            csvpath = Path(questionary.text('Please enter a file path name to save your file').ask())
-    # Save the results as a .csv file by importing and using save_csv() from fileio
-            save_csv(csvpath, qualifying_loans)
-    # If the user decides not to save the file, exit the app
-        else:
-            sys.exit("You chose not to save your qualifying loans.")
+        sys.exit("You chose not to save your qualifying loans.")
 '''
 ---
 
