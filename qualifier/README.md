@@ -1,5 +1,5 @@
 # Challenge_2 - Loan Qualifier Application
-This is a command-line-interface application for identifying bank loans a customer will qualify for. It takes as inputs: loan amount, home value, monthly income and customer debt, and returns bank loan information the user qualifies for in a .csv file. 
+This is a command-line-interface application. It pulls bank loan qualification criteria from a CSV, takes user-inputed information, and filters the bank loans the user would qualify for. It takes as inputs: loan amount, home value, monthly income and customer debt, and returns bank loan information in a .csv file. 
 
 ## Technologies
 This project leverages python 3.7 with the following packages:

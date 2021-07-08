@@ -4,7 +4,6 @@
 This contains a helper function for loading and saving CSV files.
 
 """
-from app import save_qualifying_loans
 import csv
 
 
@@ -33,7 +32,7 @@ def load_csv(csvpath):
 
 
 
-def save_csv(csvpath):
+def save_csv(csvpath, qualifying_loans):
     """Writes to a CSV file 
 
     Args:
@@ -47,4 +46,4 @@ def save_csv(csvpath):
         csvwriter = csv.writer(csvfile)
         header = []
         csvwriter.writerow(header)
-        csvwriter.writerow(save_qualifying_loans())
+        csvwriter.writerow(qualifying_loans)

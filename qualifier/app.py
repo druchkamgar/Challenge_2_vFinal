@@ -119,7 +119,7 @@ def save_qualifying_loans(qualifying_loans):
         if save_file == True:
             csvpath = Path(questionary.text('Please enter a file path name to save your file').ask())
     # Save the results as a .csv file by importing and using save_csv() from fileio
-            save_csv(csvpath)
+            save_csv(csvpath, qualifying_loans)
     # If the user decides not to save the file, exit the app
         else:
             sys.exit("You chose not to save your qualifying loans.")
