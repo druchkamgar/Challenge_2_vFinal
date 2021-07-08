@@ -22,18 +22,8 @@ Before running this application first install the following packages:
 
 ---
 
-## Examples
-
-'''python
-
-
-
-This section should include screenshots, code blocks, or animations showing how your project works.
-
----
-
 ## Usage
-To use the loan qualifier application clone the repository and run the app.py file.
+### To use the loan qualifier application clone the repository and run the app.py file:
 
 >"python app.py"
 
@@ -43,23 +33,24 @@ Upon launching the loan qualifier app the user will be greeted with the followin
 
 Followed by the following questions:
 
-> *What's your credit score?
+    *What's your credit score?*
 
-> *What's your current amount of monthly debt?
+    *What's your current amount of monthly debt?*
 
-> *What's your total monthly income?
+    *What's your total monthly income?*
 
-> *What's your desired loan amount?
+    *What's your desired loan amount?*
 
-> *What's your home value?
+    *What's your home value?*
 
-> *Would you like to save your qaulifying loans in a .csv? (Y/n)
+    *Would you like to save your qaulifying loans in a .csv? (Y/n)*
+    
+    *Please enter a file path name to save your file*
 
-> *Please enter a file path name to save your file
+After accurately answering the prompts, the user will have a .csv containing information regarding bank loans they qualify for. They may not qualify for any, in which case the app will exit with the prompt: "You have no qualifying loans". The logic looks as follows:
 
-After accurately completing the steps, the user will have a .csv containing information regarding bank loans they qualify for. They may not qualify for any, in which case the app will exit with the prompt: "You have no qualifying loans". The logic looks as follows:
 
-'''python
+'''
 
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
