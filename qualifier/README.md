@@ -6,7 +6,7 @@ This project leverages python 3.7 with the following packages:
 
 > questionary - For interactive user prompts and dialogs
 
-> fire - for the command line interface
+> fire - For the command line interface
 
 ---
 
@@ -34,13 +34,24 @@ To use the loan qualifier application clone the repository and run the app.py fi
 
 Upon launching the loan qualifier app you will be greeted with the following prompts:
 
-['Enter a file path to a rate-sheet (.csv):'](Screen Shot 2021-07-08 at 12.58.55 PM.png)
+!['Enter a file path to a rate-sheet (.csv):'](Screen Shot 2021-07-08 at 12.58.55 PM.png)
 
-['Enter a file path to a rate-sheet (.csv):'][Screen Shot 2021-07-08 at 12.58.55 PM.png]
+'''python
+What's your credit score?
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+What's your current amount of monthly debt?
 
-d
+What's your total monthly income?
+
+What's your desired loan amount?
+
+What's your home value?
+
+Would you like to save your qaulifying loans in a .csv? (Y/n)
+
+Please enter a file path name to save your file
+'''
+
 ---
 
 ## Contributors
@@ -49,10 +60,7 @@ Brought to you by Columbia Fintech Bootcamp and Dariush Ruch-Kamgar.
 Contact information: 
 > druchkamgar@gmail.com
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
-
 ---
 
 ## License
 Columbia University
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
