@@ -34,7 +34,7 @@ To use the loan qualifier application clone the repository and run the app.py fi
 
 Upon launching the loan qualifier app you will be greeted with the following prompts:
 
-!['Enter a file path to a rate-sheet (.csv):'](Screen Shot 2021-07-08 at 12.58.55 PM.png)
+!['Enter a file path to a rate-sheet (.csv):'](https://github.com/druchkamgar/Challenge_2_vFinal/blob/78411570c9c7558a68614be9995bda9da26490f6/Screen%20Shot%202021-07-08%20at%2012.58.55%20PM.png)
 
 '''python
 What's your credit score?
