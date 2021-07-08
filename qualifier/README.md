@@ -3,15 +3,19 @@ This is a command-line-interface application. It pulls bank loan qualification c
 
 ## Technologies
 This project leverages python 3.7 with the following packages:
-> questionary - For interactive user promps and dialogs
+
+> questionary - For interactive user prompts and dialogs
+
 > fire - for the command line interface
 
 ---
 
 ## Installation Guide
 Before running this application first install the following packages:
-"pip install fire"
-"pip install questionary"
+
+1. "pip install fire"
+
+2. "pip install questionary"
 
 In this section, you should include detailed installation notes containing code blocks and screenshots.
 
@@ -29,7 +33,10 @@ To use the loan qualifier application clone the repository and run the app.py fi
 "python app.py"
 
 Upon launching the loan qualifier app you will be greeted with the following prompts:
-XXXXX
+
+['Enter a file path to a rate-sheet (.csv):'](Screen Shot 2021-07-08 at 12.58.55 PM.png)
+
+['Enter a file path to a rate-sheet (.csv):'][Screen Shot 2021-07-08 at 12.58.55 PM.png]
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
