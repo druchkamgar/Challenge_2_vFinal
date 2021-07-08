@@ -40,6 +40,7 @@ Upon launching the loan qualifier app you will be greeted with the following pro
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
+d
 ---
 
 ## Contributors
