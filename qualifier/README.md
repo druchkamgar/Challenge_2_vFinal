@@ -48,8 +48,7 @@ Followed by the following questions:
     Please enter a file path name to save your file
 
 After accurately answering the prompts, the user will have a .csv containing information regarding bank loans they qualify for. They may not qualify for any, in which case the app will exit with the prompt: "You have no qualifying loans". The logic looks as follows:
-
-'''
+    
     def save_qualifying_loans(qualifying_loans):
     
     """Saves the qualifying loans to a CSV file.
@@ -71,7 +70,7 @@ After accurately answering the prompts, the user will have a .csv containing inf
     # If the user decides not to save the file, exit the app
         else:
             sys.exit("You chose not to save your qualifying loans.")
-'''
+
 ---
 
 ## Contributors
